@@ -6,10 +6,20 @@
         <h2>Sony ATV Test - Jonathan Hamler</h2>
 
         <div class="row">
+            <div class="col-md-5">
+                <p>
+                    Please enter the boat characteristics. The application will then display
+                    the power requirements (HP) that will be needed for a range of speeds starting from the theoretical hull speed up to 30
+                    knots.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
 
             <div class="col-md-5">
                 {{ form_start(form) }}
-                <hr/>
                 {{ form_widget(form) }}
                 {{ form_end(form) }}
             </div>
