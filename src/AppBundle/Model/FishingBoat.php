@@ -63,5 +63,12 @@ class FishingBoat
         $this->displacement = $displacement;
     }
 
+    /**
+     * @return int
+     */
+    public function getPowerRequirement(){
+        return 250;
+    }
+
 
 }
