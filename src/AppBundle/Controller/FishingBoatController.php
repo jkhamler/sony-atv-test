@@ -27,9 +27,9 @@ class FishingBoatController extends Controller
         $fishingBoat = new FishingBoat();
 
         $form = $this->createFormBuilder($fishingBoat)
-            ->add('hullLength', NumberType::class)
-            ->add('buttockAngle', NumberType::class)
-            ->add('displacement', NumberType::class)
+            ->add('hullLength', NumberType::class, ['label' => 'Hull Length in Feet: '])
+            ->add('buttockAngle', NumberType::class, ['label' => 'Buttock Angle in Degrees: '])
+            ->add('displacement', NumberType::class, ['label' => 'Displacement in Pounds: '])
             ->add('save', SubmitType::class, array('label' => 'Calculate Power Requirements'))
             ->getForm();
 
