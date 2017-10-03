@@ -11,6 +11,14 @@ namespace AppBundle\Model;
 use Symfony\Component\Validator\Constraints as Assert;
 
 
+/**
+ * This is the 'Fishing Boat' model which contains the relevant attribute and the logic
+ * for calculating the subsequent power requirement in horsepower.
+ *
+ *
+ * Class FishingBoat
+ * @package AppBundle\Model
+ */
 class FishingBoat
 {
     protected $hullLength;

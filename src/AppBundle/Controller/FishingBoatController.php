@@ -20,6 +20,9 @@ class FishingBoatController extends Controller
 {
 
     /**
+     * This action is responsible for rendering the form, validating the data and calculating
+     * the power requirement in horsepower for the fishing boat.
+     *
      * @Route("/fishing-boat/calculate-power-requirements")
      */
     public function calculatePowerRequirementsAction(Request $request)
@@ -53,6 +56,8 @@ class FishingBoatController extends Controller
     }
 
     /**
+     * This action is responsible for rendering the results of the power requirement calculation.
+     *
      * @Route("/fishing-boat/show-results", Name="results")
      */
     public function showResultsAction(Request $request){
