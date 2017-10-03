@@ -23,11 +23,13 @@ class FishingBoat
 {
     protected $hullLength;
     /**
+     * Validation rule to ensure that the input range is adhered to.
+     *
      * @Assert\Range(
      *      min = 2,
      *      max = 7,
-     *      minMessage = "The minimum buttock angle is {{ limit }",
-     *      maxMessage = "The maximum buttock angle is {{ limit }}"
+     *      minMessage = "The minimum buttock angle is {{ limit }} degrees",
+     *      maxMessage = "The maximum buttock angle is {{ limit }} degrees"
      * )
      */
     protected $buttockAngle;
@@ -94,7 +96,7 @@ class FishingBoat
     /**
      * Calculates the Power Requirement in Horsepower for the ship
      *
-     * @return int
+     * @return float
      */
     public function getPowerRequirement()
     {
